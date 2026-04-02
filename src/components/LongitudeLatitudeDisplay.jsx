@@ -1,5 +1,5 @@
 export const LongitudeLatitudeDisplay = () => {
-  const currentLocation = null;
+  const currentLocation = useGeolocation();
 
   if (!currentLocation) {
     return <p>{'Sorry, location is currently unavailable'}</p>;
